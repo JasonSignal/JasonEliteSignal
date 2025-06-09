@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jason Elite Signal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0a1a2a, #07203d);
+      color: #e0e7ff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background:
+        radial-gradient(circle at 30% 30%, #3a8ee655, transparent 40%),
+        radial-gradient(circle at 70% 70%, #1f5cbf55, transparent 40%);
+      filter: blur(120px);
+      opacity: 0.6;
+      z-index: -1;
+      animation: subtleGlow 6s ease-in-out infinite alternate;
+    }
+    @keyframes subtleGlow {
+      0% {
+        background-position: 30% 30%, 70% 70%;
+        opacity: 0.5;
+      }
+      100% {
+        background-position: 35% 35%, 65% 65%;
+        opacity: 0.7;
+      }
+    }
+    .container {
+      background: rgba(10, 25, 45, 0.85);
+      padding: 40px 50px;
+      border-radius: 20px;
+      max-width: 600px;
+      box-shadow:
+        0 8px 20px rgba(31, 92, 191, 0.4);
+      transition: box-shadow 0.3s ease;
+    }
+    .container:hover {
+      box-shadow:
+        0 12px 40px rgba(31, 92, 191, 0.7);
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: #a2bffa;
+      letter-spacing: 0.05em;
+    }
+    p {
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #d0d9ffcc;
+      margin-bottom: 10px;
+    }
+    .trusted {
+      font-weight: 600;
+      color: #4ade80;
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+    .profits {
+      font-weight: 600;
+      color: #facc15;
+      font-size: 1.25rem;
+      margin-bottom: 25px;
+    }
+    .cta-button {
+      background: #1f5cbf;
+      border: none;
+      padding: 15px 40px;
+      font-size: 1.25rem;
+      color: #e0e7ff;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow:
+        0 4px 15px #1f5cbfcc;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      display: inline-block;
+    }
+    .cta-button:hover {
+      background-color: #3a8eff;
+      box-shadow:
+        0 6px 25px #3a8effcc;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Welcome to Jason Elite Signal</h1>
+    <p>
+      📈 Real-time crypto trading signals<br />
+      💼 Proven strategies that protect your capital<br />
+      ✨ Join hundreds who are already boosting their profits daily<br />
+      🔊 Exclusive insights with 90%+ accuracy<br />
+      📅 Stay ahead and grow your wealth smartly
+    </p>
+    <p class="profits">💰 Thousands in profits made every week! 💰</p>
+    <p class="trusted">✅ Trusted by hundreds of satisfied clients worldwide</p>
+    <a class="cta-button" href="https://t.me/JasonElite" target="_blank" rel="noopener noreferrer">⬇️ Join Us on Telegram</a>
+  </div>
+</body>
+</html>
