@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jason Elite Signal</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <!-- תגיות מטא לתצוגה מקדימה -->
+
+  <!-- Meta tags for preview -->
   <meta name="description" content="Real-time crypto trading signals with 90%+ accuracy. Join hundreds of satisfied clients and boost your profits daily!" />
   <meta property="og:title" content="Jason Elite Signal - Crypto Trading Success" />
   <meta property="og:description" content="Get proven strategies, real-time signals, and exclusive insights to grow your wealth. Join now!" />
   <meta property="og:image" content="https://raw.githubusercontent.com/jasonelitenew/jasonelitenew/main/image/63ab794d-aa6e-490b-91e7-891c79de6ea2.png" />
-  <meta property="og:image:width" content="1200" /> <!-- מומלץ להוסיף גודל -->
-  <meta property="og:image:height" content="630" /> <!-- מומלץ להוסיף גודל -->
   <meta property="og:url" content="https://jasonelitenew.github.io/jasonelitenew/" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Jason Elite Signal - Crypto Trading Success" />
   <meta name="twitter:description" content="Get proven strategies, real-time signals, and exclusive insights to grow your wealth. Join now!" />
   <meta name="twitter:image" content="https://raw.githubusercontent.com/jasonelitenew/jasonelitenew/main/image/63ab794d-aa6e-490b-91e7-891c79de6ea2.png" />
+
   <style>
     body {
       margin: 0;
@@ -31,7 +31,7 @@
       justify-content: center;
       min-height: 100vh;
       text-align: center;
-      overflow: hidden;
+      overflow-y: auto; /* ✅ תיקון כאן */
     }
     body::before {
       content: '';
@@ -63,13 +63,12 @@
       padding: 40px 50px;
       border-radius: 20px;
       max-width: 600px;
-      box-shadow:
-        0 8px 20px rgba(31, 92, 191, 0.4);
+      box-shadow: 0 8px 20px rgba(31, 92, 191, 0.4);
       transition: box-shadow 0.3s ease;
+      margin: 40px auto;
     }
     .container:hover {
-      box-shadow:
-        0 12px 40px rgba(31, 92, 191, 0.7);
+      box-shadow: 0 12px 40px rgba(31, 92, 191, 0.7);
     }
     h1 {
       font-weight: 600;
@@ -107,15 +106,13 @@
       cursor: pointer;
       text-decoration: none;
       font-weight: 600;
-      box-shadow:
-        0 4px 15px #1f5cbfcc;
+      box-shadow: 0 4px 15px #1f5cbfcc;
       transition: background-color 0.3s ease, box-shadow 0.3s ease;
       display: inline-block;
     }
     .cta-button:hover {
       background-color: #3a8eff;
-      box-shadow:
-        0 6px 25px #3a8effcc;
+      box-shadow: 0 6px 25px #3a8effcc;
       color: #fff;
     }
   </style>
@@ -134,5 +131,12 @@
     <p class="trusted">✅ Trusted by hundreds of satisfied clients worldwide</p>
     <a class="cta-button" href="https://t.me/JasonElite" target="_blank" rel="noopener noreferrer">⬇️ Join Us on Telegram</a>
   </div>
+
+  <!-- ✅ גלילה אוטומטית למטה (אופציונלי) -->
+  <script>
+    window.onload = () => {
+      window.scrollTo(0, document.body.scrollHeight);
+    };
+  </script>
 </body>
 </html>
