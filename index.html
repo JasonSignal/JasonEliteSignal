@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jason Elite Signal</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-
-  <!-- Meta tags for preview -->
-  <meta name="description" content="Real-time crypto trading signals with 90%+ accuracy. Join hundreds of satisfied clients and boost your profits daily!" />
-  <meta property="og:title" content="Jason Elite Signal - Crypto Trading Success" />
-  <meta property="og:description" content="Get proven strategies, real-time signals, and exclusive insights to grow your wealth. Join now!" />
-  <meta property="og:image" content="https://raw.githubusercontent.com/jasonelitenew/jasonelitenew/main/image/63ab794d-aa6e-490b-91e7-891c79de6ea2.png" />
-  <meta property="og:url" content="https://jasonelitenew.github.io/jasonelitenew/" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Jason Elite Signal - Crypto Trading Success" />
-  <meta name="twitter:description" content="Get proven strategies, real-time signals, and exclusive insights to grow your wealth. Join now!" />
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/jasonelitenew/jasonelitenew/main/image/63ab794d-aa6e-490b-91e7-891c79de6ea2.png" />
-
+  
+  <!-- Open Graph Meta Tags (for WhatsApp, Facebook, etc.) -->
+  <meta property="og:title" content="Jason Elite Signal">
+  <meta property="og:description" content="Real-time crypto trading signals with proven strategies and exclusive insights. Join hundreds of traders boosting their profits daily with 90%+ accuracy signals.">
+  <meta property="og:image" content="https://i.ibb.co/fY5kLj6h/623e5bcf-e494-42bf-b33f-9d970ce17de1.jpg">
+  <meta property="og:image:alt" content="Jason Elite Signal">
+  <meta property="og:url" content="https://your-domain.com">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Jason Elite Signal">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jason Elite Signal">
+  <meta name="twitter:description" content="Real-time crypto trading signals with proven strategies and exclusive insights. Join hundreds of traders boosting their profits daily with 90%+ accuracy signals.">
+  <meta name="twitter:image" content="https://i.ibb.co/fY5kLj6h/623e5bcf-e494-42bf-b33f-9d970ce17de1.jpg">
+  
+  <!-- Additional Meta Tags -->
+  <meta name="description" content="Real-time crypto trading signals with proven strategies and exclusive insights. Join hundreds of traders boosting their profits daily with 90%+ accuracy signals.">
+  <meta name="keywords" content="crypto signals, trading, bitcoin, cryptocurrency, profit, telegram">
+  <meta name="author" content="Jason Elite Signal">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0a1a2a, #07203d);
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
       color: #e0e7ff;
       display: flex;
       flex-direction: column;
@@ -31,8 +46,11 @@
       justify-content: center;
       min-height: 100vh;
       text-align: center;
-      overflow-y: auto; /* ✅ תיקון כאן */
+      overflow-x: hidden;
+      position: relative;
     }
+    
+    /* Animated background effects */
     body::before {
       content: '';
       position: fixed;
@@ -41,102 +59,364 @@
       width: 200%;
       height: 200%;
       background:
-        radial-gradient(circle at 30% 30%, #3a8ee655, transparent 40%),
-        radial-gradient(circle at 70% 70%, #1f5cbf55, transparent 40%);
-      filter: blur(120px);
-      opacity: 0.6;
+        radial-gradient(circle at 25% 25%, #8b5cf6, transparent 50%),
+        radial-gradient(circle at 75% 75%, #06b6d4, transparent 50%),
+        radial-gradient(circle at 50% 50%, #f59e0b, transparent 70%);
+      filter: blur(100px);
+      opacity: 0.1;
+      z-index: -2;
+      animation: float 20s ease-in-out infinite;
+    }
+    
+    body::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 98px,
+          rgba(139, 92, 246, 0.03) 100px
+        ),
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 98px,
+          rgba(6, 182, 212, 0.03) 100px
+        );
       z-index: -1;
-      animation: subtleGlow 6s ease-in-out infinite alternate;
     }
-    @keyframes subtleGlow {
-      0% {
-        background-position: 30% 30%, 70% 70%;
-        opacity: 0.5;
+    
+    @keyframes float {
+      0%, 100% {
+        transform: rotate(0deg) scale(1);
       }
-      100% {
-        background-position: 35% 35%, 65% 65%;
-        opacity: 0.7;
+      33% {
+        transform: rotate(5deg) scale(1.05);
+      }
+      66% {
+        transform: rotate(-5deg) scale(0.95);
       }
     }
+    
     .container {
-      background: rgba(10, 25, 45, 0.85);
-      padding: 40px 50px;
-      border-radius: 20px;
-      max-width: 600px;
-      box-shadow: 0 8px 20px rgba(31, 92, 191, 0.4);
-      transition: box-shadow 0.3s ease;
-      margin: 40px auto;
+      background: rgba(15, 15, 35, 0.9);
+      backdrop-filter: blur(20px);
+      padding: 60px 50px;
+      border-radius: 24px;
+      max-width: 700px;
+      margin: 20px;
+      box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(139, 92, 246, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
     }
+    
+    .container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.1), transparent);
+      animation: shimmer 3s infinite;
+    }
+    
+    @keyframes shimmer {
+      0% { left: -100%; }
+      100% { left: 100%; }
+    }
+    
     .container:hover {
-      box-shadow: 0 12px 40px rgba(31, 92, 191, 0.7);
+      transform: translateY(-5px);
+      box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(139, 92, 246, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
     }
-    h1 {
-      font-weight: 600;
-      font-size: 2.8rem;
-      margin-bottom: 20px;
-      color: #a2bffa;
-      letter-spacing: 0.05em;
+    
+    .logo-section {
+      margin-bottom: 30px;
     }
-    p {
-      font-weight: 400;
-      font-size: 1.2rem;
-      line-height: 1.6;
-      color: #d0d9ffcc;
+    
+    .logo-icon {
+      font-size: 4rem;
       margin-bottom: 10px;
+      background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: pulse 2s infinite;
     }
-    .trusted {
-      font-weight: 600;
-      color: #4ade80;
-      font-size: 1.2rem;
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.8; }
+    }
+    
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 3.2rem;
       margin-bottom: 25px;
+      background: linear-gradient(135deg, #a78bfa, #06b6d4, #f59e0b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
     }
-    .profits {
-      font-weight: 600;
-      color: #facc15;
-      font-size: 1.25rem;
-      margin-bottom: 25px;
+    
+    .subtitle {
+      font-size: 1.3rem;
+      color: #94a3b8;
+      margin-bottom: 35px;
+      font-weight: 500;
     }
+    
+    .features {
+      margin-bottom: 35px;
+    }
+    
+    .feature-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: left;
+      margin-bottom: 15px;
+      padding: 15px 20px;
+      background: rgba(139, 92, 246, 0.05);
+      border-radius: 12px;
+      border-left: 3px solid #8b5cf6;
+      transition: all 0.3s ease;
+    }
+    
+    .feature-item:hover {
+      background: rgba(139, 92, 246, 0.1);
+      transform: translateX(5px);
+    }
+    
+    .feature-icon {
+      font-size: 1.5rem;
+      margin-right: 15px;
+      min-width: 30px;
+    }
+    
+    .feature-text {
+      font-size: 1.1rem;
+      color: #d1d5db;
+      font-weight: 500;
+    }
+    
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin: 40px 0;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    .stat-item {
+      text-align: center;
+      padding: 20px;
+      background: rgba(6, 182, 212, 0.1);
+      border-radius: 16px;
+      border: 1px solid rgba(6, 182, 212, 0.2);
+      flex: 1;
+      min-width: 140px;
+      transition: all 0.3s ease;
+    }
+    
+    .stat-item:hover {
+      background: rgba(6, 182, 212, 0.15);
+      transform: translateY(-3px);
+    }
+    
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #06b6d4;
+      display: block;
+    }
+    
+    .stat-label {
+      font-size: 0.9rem;
+      color: #94a3b8;
+      margin-top: 5px;
+    }
+    
+    .cta-section {
+      margin-top: 40px;
+    }
+    
     .cta-button {
-      background: #1f5cbf;
+      background: linear-gradient(135deg, #8b5cf6, #06b6d4);
       border: none;
-      padding: 15px 40px;
-      font-size: 1.25rem;
-      color: #e0e7ff;
+      padding: 18px 45px;
+      font-size: 1.3rem;
+      color: white;
       border-radius: 50px;
       cursor: pointer;
       text-decoration: none;
       font-weight: 600;
-      box-shadow: 0 4px 15px #1f5cbfcc;
-      transition: background-color 0.3s ease, box-shadow 0.3s ease;
-      display: inline-block;
+      font-family: 'Poppins', sans-serif;
+      box-shadow:
+        0 10px 30px rgba(139, 92, 246, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+      overflow: hidden;
     }
+    
+    .cta-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.5s;
+    }
+    
+    .cta-button:hover::before {
+      left: 100%;
+    }
+    
     .cta-button:hover {
-      background-color: #3a8eff;
-      box-shadow: 0 6px 25px #3a8effcc;
-      color: #fff;
+      transform: translateY(-2px);
+      box-shadow:
+        0 15px 40px rgba(139, 92, 246, 0.6),
+        0 0 0 1px rgba(255, 255, 255, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    }
+    
+    .cta-button:active {
+      transform: translateY(0);
+    }
+    
+    .telegram-icon {
+      font-size: 1.5rem;
+    }
+    
+    .trust-badge {
+      margin-top: 30px;
+      padding: 15px;
+      background: rgba(34, 197, 94, 0.1);
+      border-radius: 12px;
+      border: 1px solid rgba(34, 197, 94, 0.2);
+      color: #4ade80;
+      font-weight: 600;
+    }
+    
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .container {
+        padding: 40px 30px;
+        margin: 10px;
+      }
+      
+      h1 {
+        font-size: 2.5rem;
+      }
+      
+      .subtitle {
+        font-size: 1.1rem;
+      }
+      
+      .stats {
+        flex-direction: column;
+      }
+      
+      .feature-item {
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .feature-icon {
+        margin-right: 0;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .cta-button {
+        padding: 15px 35px;
+        font-size: 1.1rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>🚀 Welcome to Jason Elite Signal</h1>
-    <p>
-      📈 Real-time crypto trading signals<br />
-      💼 Proven strategies that protect your capital<br />
-      ✨ Join hundreds who are already boosting their profits daily<br />
-      🔊 Exclusive insights with 90%+ accuracy<br />
-      📅 Stay ahead and grow your wealth smartly
-    </p>
-    <p class="profits">💰 Thousands in profits made every week! 💰</p>
-    <p class="trusted">✅ Trusted by hundreds of satisfied clients worldwide</p>
-    <a class="cta-button" href="https://t.me/JasonElite" target="_blank" rel="noopener noreferrer">⬇️ Join Us on Telegram</a>
+    <div class="logo-section">
+      <div class="logo-icon">⚡</div>
+    </div>
+    
+    <h1>Jason Elite Signal</h1>
+    
+    <p class="subtitle">Real-time crypto trading signals with proven strategies and exclusive market insights</p>
+    
+    <div class="features">
+      <div class="feature-item">
+        <span class="feature-icon">📈</span>
+        <span class="feature-text">Premium real-time crypto trading signals</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">🛡️</span>
+        <span class="feature-text">Proven risk management strategies that protect your capital</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">🎯</span>
+        <span class="feature-text">Exclusive market insights with 90%+ accuracy rate</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">🚀</span>
+        <span class="feature-text">Join hundreds of traders boosting profits daily</span>
+      </div>
+    </div>
+    
+    <div class="stats">
+      <div class="stat-item">
+        <span class="stat-number">90%+</span>
+        <span class="stat-label">Success Rate</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">500+</span>
+        <span class="stat-label">Active Traders</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">24/7</span>
+        <span class="stat-label">Live Signals</span>
+      </div>
+    </div>
+    
+    <div class="trust-badge">
+      ✅ Trusted by hundreds of satisfied clients worldwide
+    </div>
+    
+    <div class="cta-section">
+      <a class="cta-button" href="https://t.me/JasonElite" target="_blank" rel="noopener noreferrer">
+        <span class="telegram-icon">📱</span>
+        Join Elite Telegram Channel
+      </a>
+    </div>
   </div>
-
-  <!-- ✅ גלילה אוטומטית למטה (אופציונלי) -->
-  <script>
-    window.onload = () => {
-      window.scrollTo(0, document.body.scrollHeight);
-    };
-  </script>
 </body>
 </html>
